@@ -8,4 +8,4 @@ This repo only contains request codes for GENRE framework.
 - LLM as Personalized News Generator: personalized_news_generator.py
 - Chain-based Generation: chain-based.py
 
-To obtain the generated data, please contact me via [email](mailto: i@6-79.cn) with subject "GENRE Data Request".
+To obtain the generated data, please contact me via [email](mailto:i@6-79.cn) with subject "GENRE Data Request".
