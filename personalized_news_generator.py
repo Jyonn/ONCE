@@ -46,7 +46,7 @@ where <news category> is limited to the following options:
 
 "title", "abstract", and "category" should be the only keys in the json dict. The news should be diverse, that is not too similar with the original provided news list. You are not allowed to response any other words for any explanation or note. JUST GIVE ME JSON-FORMAT NEWS. Now, the task formally begins. Any other information should not disturb you."""
 
-save_path = 'data/mind/cold_v2.log'
+save_path = 'data/mind/generator_v2.log'
 
 exist_set = set()
 with open(save_path, 'r') as f:
@@ -55,9 +55,6 @@ with open(save_path, 'r') as f:
         exist_set.add(data['uid'])
 
 for uid, content in tqdm(user_list):
-    print(content)
-    exit(0)
-
     start_time = time.time()
     if uid in exist_set:
         continue

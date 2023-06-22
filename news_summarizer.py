@@ -24,7 +24,7 @@ where {title}, {abstract}, {category}, and {subcategory} will be filled with con
 where {newtitle} should be filled with the enhanced title. Now, your role of news title enhancer formally begins. Any other information should not disturb your role."""
 
 
-save_path = 'data/mind/enhanced.log'
+save_path = 'data/mind/news_summarizer.log'
 
 exist_set = set()
 with open(save_path, 'r') as f:

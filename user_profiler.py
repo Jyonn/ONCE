@@ -56,7 +56,7 @@ and the region should be limited to each state of the US.
 
 Only [topics] and [region] can be appeared in your response. If you think region are hard to predict, leave it blank. Your response topic/region list should be ordered, that the first several options should be most related to the user's interest. You are not allowed to response any other words for any explanation or note. Now, the task formally begins. Any other information should not disturb you."""
 
-save_path = 'data/mind/interest_v3.log'
+save_path = 'data/mind/user_profiler.log'
 
 exist_set = set()
 with open(save_path, 'r') as f:
@@ -67,9 +67,6 @@ with open(save_path, 'r') as f:
 empty_count = 0
 
 for uid, content in tqdm(user_list):
-    print(content)
-    exit(0)
-
     start_time = time.time()
     if uid in exist_set:
         continue
