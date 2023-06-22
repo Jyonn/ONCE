@@ -19,4 +19,3 @@ June 22, 2023. **Update**. We release our generated data for other researchers t
 - data/generator_v2: Personalized News Generator, Full data 2nd API
 - data/chain_v5: Chain-based Personalized News Generator, 96% Users with Topic 1st API
 - data/chain_v6: Chain-based Personalized News Generator, 96% Users with Topic 2nd API
-- 
