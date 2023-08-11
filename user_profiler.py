@@ -13,6 +13,11 @@ MIN_INTERVAL = 0
 mind_prompter = MindPrompter('data/mind/news.tsv')
 user_list = MindUser('data/mind/user', mind_prompter).stringify()
 
+print(user_list[208][0])
+print(user_list[208][1])
+
+exit(0)
+
 system = """You are asked to describe user interest based on his/her browsed news list, the format of which is as below:
 
 (1) {news title}

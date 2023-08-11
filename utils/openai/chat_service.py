@@ -1,4 +1,5 @@
 import openai
+from timeout_decorator import timeout_decorator
 
 from utils.openai.keys import Keys
 
@@ -12,13 +13,13 @@ class ChatService:
         if system:
             self.dialog.append({"role": "system", "content": system})
 
+    @timeout_decorator.timeout(5)
     def ask(self, question):
         self.dialog.append({"role": "user", "content": question})
         resp = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
             messages=self.dialog,
             api_key=self.keys.get_apikey(),
-            timeout=5,
         )
         self.dialog.append(resp['choices'][0]['message'])
         return resp['choices'][0]['message']['content']

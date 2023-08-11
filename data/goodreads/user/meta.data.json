@@ -1,0 +1,28 @@
+{
+  "version": "UniDep-2.0",
+  "vocs": {
+    "uid": {
+      "size": 23089,
+      "cols": [
+        "uid"
+      ]
+    },
+    "bid": {
+      "size": 16833,
+      "cols": [
+        "history"
+      ]
+    }
+  },
+  "cols": {
+    "uid": {
+      "vocab": "uid"
+    },
+    "history": {
+      "vocab": "bid",
+      "max_length": 9,
+      "padding": false
+    }
+  },
+  "id_col": "uid"
+}
