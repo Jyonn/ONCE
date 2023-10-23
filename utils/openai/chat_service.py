@@ -13,7 +13,7 @@ class ChatService:
         if system:
             self.dialog.append({"role": "system", "content": system})
 
-    @timeout_decorator.timeout(5)
+    @timeout_decorator.timeout(8)
     def ask(self, question):
         self.dialog.append({"role": "user", "content": question})
         resp = openai.ChatCompletion.create(
