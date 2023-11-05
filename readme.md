@@ -67,7 +67,7 @@ According to the Legommenders framework, we have the following training pipeline
 - Install `UniTok`, `pigmento`, `refconfig`, `oba` and `smartdict` package.
 - For LLaMA in DIRE, please download or convert to transformers-supported version.
 - If you want to reproduce the data tokenization, please download the raw data from [MIND](https://msnews.github.io/) and [Goodreads](https://sites.google.com/eng.ucsd.edu/ucsdbookgraph/home).
-- If you want to use the tokenized data, please download it from here, and you can skip the preprocessing step.
+- If you want to use the tokenized data, please download it from [here](https://github.com/Jyonn/ONCE/releases/tag/Dataset), and you can skip the preprocessing step.
 
 ### Data Tokenization (Optional)
 
