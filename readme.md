@@ -74,7 +74,7 @@ According to the Legommenders framework, we have the following training pipeline
 ### Data Tokenization (Optional)
 
 Please refer to `process/mind/processor_unitokv3.npy` and `process/goodreads/` for the tokenization results.
-More detailed instructions can be found in [UnifiedTokenization](https://github.com/Jyonn/UnifiedTokenization) repository.
+More detailed instructions can be found in [UnifiedTokenizer](https://github.com/Jyonn/UnifiedTokenizer) repository.
 To integrate GENRE-generated data, similar operations should be conducted, or you can directly use the tokenized data provided by us.
 
 ### Configurations
