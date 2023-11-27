@@ -52,7 +52,7 @@ According to the Legommenders framework, we have the following training pipeline
 - **Training Preparation (optional)**: Before finetuning the open-source LLMs, we will first cache the upper layer hidden states to accelerate the training process.
 - **Training and testing**
 
-, and GENRE and DIRE will be integrated at different stages.
+GENRE and DIRE will be integrated at different stages.
 
 |        Pipeline         | ORIGINAL | GENRE | DIRE |                             Comments                              |
 |:-----------------------:|:--------:|:-----:|:----:|:-----------------------------------------------------------------:|
@@ -73,8 +73,8 @@ According to the Legommenders framework, we have the following training pipeline
 
 ### Data Tokenization (Optional)
 
-Please refer to `process/mind/processor_unitokv3.npy` and `process/goodreads/` for the tokenization results.
-More detailed instructions can be found in [UnifiedTokenizer](https://github.com/Jyonn/UnifiedTokenizer) repository.
+Please refer to `process/mind/processor_unitokv3.npy` and `process/goodreads/` in the [Legommenders](https://github.com/Jyonn/Legommenders) repo for the preprocessing scripts.
+More detailed instructions can be found in [UnifiedTokenizer](https://github.com/Jyonn/UnifiedTokenizer) repository, which is the tokenization toolkits used for Legommenders.
 To integrate GENRE-generated data, similar operations should be conducted, or you can directly use the tokenized data provided by us.
 
 ### Configurations
