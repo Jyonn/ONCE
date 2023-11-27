@@ -8,6 +8,8 @@ All the recommendation experiments are conducted under our content based recomme
 It involves a set of news recommenders and click-through rate prediction models.
 It is a modular-design framework, supporting the integration with pretrained language models (PLMs) and large language models (LLMs).
 
+**Updated on Nov. 27, 2023**: We fix the minor bugs in the README and add the citation.
+
 **Updated on Nov. 5, 2023**: We have released the majority of our datasets [here](https://github.com/Jyonn/ONCE/releases/tag/Dataset), based on which you can reproduce the content summarizer of GENRE and all the open-source results of DIRE.
 
 **Updated on Oct. 22, 2023**: We have our training code and pipeline established.
@@ -73,7 +75,7 @@ GENRE and DIRE will be integrated at different stages.
 
 ### Data Tokenization (Optional)
 
-Please refer to `process/mind/processor_unitokv3.npy` and `process/goodreads/` in the [Legommenders](https://github.com/Jyonn/Legommenders) repo for the preprocessing scripts.
+Please refer to `process/mind/processor_unitokv3.py` and `process/goodreads/` in the [Legommenders](https://github.com/Jyonn/Legommenders) repo for the preprocessing scripts.
 More detailed instructions can be found in [UnifiedTokenizer](https://github.com/Jyonn/UnifiedTokenizer) repository, which is the tokenization toolkits used for Legommenders.
 To integrate GENRE-generated data, similar operations should be conducted, or you can directly use the tokenized data provided by us.
 
@@ -119,3 +121,16 @@ python worker.py --data config/data/mind-llama.yaml --embed config/embed/<embed>
 
 - Please specify `embed`, `llm_ver`, and `embed_hidden_size` as the instruction above.
 - We set a smaller `batch_size` and accumulate two batches (i.e., `acc_batch`) for network back propagation. We train one fourth of the training data each time (i.e., `epoch_batch`).
+
+## Citation
+
+If you find our work useful in your research, please consider citing:
+
+```bibtex
+@inproceedings{liu2023once,
+  title={ONCE: Boosting Content-based Recommendation with Both Open- and Closed-source Large Language Models},
+  author={Qijiong Liu and Nuo Chen and Tetsuya Sakai and Xiao-Ming Wu},
+  booktitle={Proceedings of the Seventeen ACM International Conference on Web Search and Data Mining},
+  year={2024}
+}
+```
