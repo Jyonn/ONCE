@@ -14,7 +14,7 @@ It is a modular-design framework, supporting the integration with pretrained lan
 
 **Updated on Oct. 22, 2023**: We have our training code and pipeline established.
 
-**Updated on Oct. 20, 2023**: Our paper has been accepted by WSDM 2023.
+**Updated on Oct. 20, 2023**: Our paper has been accepted by WSDM 2024.
 
 ## Abstract
 
