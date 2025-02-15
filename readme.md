@@ -8,6 +8,8 @@ All the recommendation experiments are conducted under our content based recomme
 It involves a set of news recommenders and click-through rate prediction models.
 It is a modular-design framework, supporting the integration with pretrained language models (PLMs) and large language models (LLMs).
 
+**Updated on Feb. 15, 2025**: We add the [data preprocessing scripts](LegoV2) for LegommendersV2.
+
 **Updated on Nov. 27, 2023**: We fix the minor bugs in the README and add the citation.
 
 **Updated on Nov. 5, 2023**: We have released the majority of our datasets [here](https://github.com/Jyonn/ONCE/releases/tag/Dataset), based on which you can reproduce the content summarizer of GENRE and all the open-source results of DIRE.
